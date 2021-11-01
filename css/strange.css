@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+code {
+    text-decoration: red underline;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    max-width: 1250px;
+    width: 100vw;
+    justify-content: center;
+    margin: auto;
+}
+
+.container > div {
+    height: 200px;
+    aspect-ratio: 1;
+    text-align: center;
+    margin: 20px;
+}
+
+.container > div:hover {
+    background: white;
+    box-shadow: 1 4 8 0 orange inset;
+}
+
+.a {
+    background: linear-gradient(to bottom right, red, orange);
+}
+
+.b {
+    background: linear-gradient(to bottom right, blue, cyan);
+}
+
+.c {
+    background: linear-gradient(to bottom right, darkgreen, lightgreen);
+}
+
+.d {
+    background: linear-gradient(to bottom right, purple, pink);
+}
+
+
+
+.dark-mode {
+    background: rgba(18, 18, 18, 1);
+    color: rgba(255, 255, 255, 1)
+}
+
+.button {
+    background: rgba(18, 18, 18, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+}
+
+#circle {
+    position: fixed;
+    right: 5vw;
+    bottom: 5vh;
+    height: 50;
+    aspect-ratio: 1;
+    border-bottom: 20px solid yellow;
+    border-top: 20px solid red;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-radius: 50%;
+}
+
+#scroll-progress {
+    height: 5px;
+    background: yellow;
+    position: fixed;
+    top: 0;
+}
